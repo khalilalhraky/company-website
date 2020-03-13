@@ -1,0 +1,72 @@
+.top-section
+    overflow: visible
+    
+
+.about-page
+    .about
+
+        p
+            width: 85% !important
+// ===========================
+//       contact-section
+// ===========================
+
+.contact-section
+    .form-section
+        input,textarea
+            position: relative
+            z-index: 99999
+
+
+.services-page
+
+    .page-heading
+        margin-bottom: 70px
+
+    .service
+        margin-bottom: 30px
+        padding: 30px 40px
+        box-shadow: 0px 0px 11px -2px rgba(224,224,224,0.88)
+        background: #fff
+        position: relative
+        z-index: 999999
+        transition: all .3s
+        &:hover
+            
+            box-shadow: 0px 0px 18px 1px rgba(224,224,224,0.88)
+                
+        .heading
+            font-size: 20px
+            font-weight: 300
+            margin-bottom: 20px
+            &::after
+                width: 50px
+                margin: 10px 0
+
+        p
+            font-size: 14px
+            line-height: 1.7
+
+        .service-list
+            font-size: 14px
+            font-weight: 300
+            padding: 0
+            margin: 0
+            margin-bottom: 20px
+                            
+            li
+                margin-bottom: 10px
+                &::before
+                    content: '\f105'
+                    font-family: "FontAwesome"
+                    font-weight: 900
+                    -webkit-font-smoothing: antialiased
+                    display: inline-block
+                    color: #b7b7b7
+                    margin-right: 8px
+                    .small-button
+                        text-align: left
+
+.portfolio-page
+    .portfolio-section
+        padding: 0

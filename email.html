@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .filtr-item {
+        width: 25%;
+        background-color: cornflowerblue;
+      }
+      img {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <!-- For filtering controls add -->
+      <li data-filter="all">All items</li>
+      <li data-filter="1">Category 1</li>
+      <li data-filter="2">Category 2</li>
+      <li data-filter="3">Category 3</li>
+      <!-- For a shuffle control add -->
+      <li data-shuffle>Shuffle items</li>
+      <!-- For sorting controls add -->
+      <li data-sortAsc>Ascending</li>
+      <li data-sortDesc>Descending</li>
+    </ul>
+    <div class="filter-container">
+      <div class="filtr-item" data-category="1" data-sort="value">
+        <img src="images/post1.jpg" alt="sample" />
+      </div>
+      <div class="filtr-item" data-category="2, 1" data-sort="value">
+        <img src="images/post1.jpg" alt="sample" />
+      </div>
+      <div class="filtr-item" data-category="1, 3" data-sort="value">
+        <img src="images/post1.jpg" alt="sample" />
+      </div>
+    </div>
+
+    <script src="./js/vanilla.filterizr.min.js"></script>
+    <script>
+      const options = {
+        /* check next step for available options */
+      };
+
+      // Adjust the CSS selector to match the container where
+      // you set up your image gallery
+      const filterizr = new Filterizr(".filter-container", options);
+    </script>
+  </body>
+</html>
+
+<!-- <div>
+  <div
+    class="header"
+    style="text-align: center; padding: 40px 0; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 600; color: #fff; font-size: 140%; background: #c2e59c; background: -webkit-linear-gradient(to right, #c2e59c, #64b3f4); background: linear-gradient(to right, #c2e59c, #64b3f4); border-radius: 20px 20px 0 0;"
+  >
+    السلام عليكم لارا
+  </div>
+  <div class="content" style="direction: rtl; padding: 40px; color: #666;">
+    <div class="box">
+      <h2>Photoshop</h2>
+      <a
+        href="https://www.youtube.com/playlist?list=PLSoOtQkDh8ByH7x6eQfjVt09V9GJMxL2Z"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Photoshop Tutorials</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PL-7GUPc_kZKZxOzAn5FarZ6TkJDyfqkjq
+        "
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Learn Photoshop Photo Editing</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>illustrator</h2>
+      <a
+        href="https://www.youtube.com/playlist?list=PLYfCBK8IplO4X-jM1Rp43wAIdpP2XNGwP
+        "
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >learn basic of illustrator</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PLwnXQvUxjbNsvCG_rJJ8vzhbqtEjphKsf"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Adobe Illustrator Tutorials</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PL-c9Rq56P4KnsnGtHPyY90bOVFPL6NYQV"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Adobe Illustrator More Advanced Tutorials</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PLttcEXjN1UcEGDBMwnFzZ0JqxrQZwmeck"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Illustrator Advanced</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PLqj9pOs4HQWu6cshMge1Z0m8jFcUpKhsh"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >illustrator tutorial - professional logo design</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>InDesign</h2>
+      <a
+        href="https://www.youtube.com/watch?v=RXRT3dHu6_o"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >InDesign for Beginners</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>Premiere</h2>
+      <a
+        href="https://www.youtube.com/watch?v=Hls3Tp7JS8E"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >LEARN PREMIERE PRO IN 20 MINUTES ! - Tutorial For Beginners</a
+      >
+      <a
+        href="https://www.youtube.com/playlist?list=PLBrRXoTJAkZBl3XDQEPjVj4okFAHQrVex
+        "
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Adobe Premiere Pro Tutorials</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>Design</h2>
+      <a
+        href="https://www.youtube.com/playlist?list=PLrdZb8zHBvYR3RVcte76JYTqdzVMriplD
+        "
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >learning about flat design</a
+      >
+
+      <a
+        href="https://www.youtube.com/watch?v=UyoXKGQrmtY"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >How to Design a Logo - Full Identity Design Course</a
+      >
+      <a
+        href="https://www.youtube.com/watch?v=UsB6MV56fLo"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >How To Design A Modern Logo | Start To Finish</a
+      >
+      <a
+        href="https://www.youtube.com/watch?v=zOPA0NaeTBk&list=PLOzvbg0QMqOSFxPo4CvEA8lbJZBZrPh8x&index=2&t=0s"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+      >
+        Aaron Draplin Takes On a Logo Design Challenge</a
+      >
+      <a
+        href="https://www.youtube.com/watch?v=_PMK1M7ZxJc"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Making it in the little leagues: Aaron Draplin at TEDxPortland</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>قنواة يوتيوب</h2>
+      <a
+        href="https://www.youtube.com/user/TheSkoolRocks"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قناة يوتيوب تتكلم عن التصميم</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCctXZhXmG-kf3tlIXgVZUlw"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قناة يوتيو لشخص اسمه gary رجل اعمال اروع قناة بالنسبة لي</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCiq1FIgtEK7LRAOB1JXTPig"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قناة Silicon Valley Girl سيدة اعمال ربما تعجبك</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCR9gMSj0UUxGvgfpNhhF3Jw"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+      >
+        قنات Amy Landino قناة لسيدة اعمال محتواها رائع ومفيد</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCZlAwnm7YLWxQtdDZiSWaJA"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قنات Gillian Perkins قنات يوجد بها معلومات مفيدة</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCRp3A2R6WwhfmQ68IB3mWag"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قناة Inspire Yourself عن قصص نجاح المشاهير</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCnBTvMFhuvbE_dhw2mo0NaQ"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >قناة Sunny Lenarduzzi قناة مفيدة وفيها فيديوهات عن التسويق</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCa3TXR0vxlj4uKgQNTvXAHw"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Learn English with Ehab</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCFDhmDHn2e35h8J1rm_gKHg"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >English With Khaled</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>websites for designers</h2>
+      <a
+        href="https://dribbble.com/"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >Dribbble</a
+      >
+      <a
+        href="https://www.behance.net/"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >behance</a
+      >
+    </div>
+
+    <div class="box">
+      <h2>TEDx Talks</h2>
+      <a
+        href="https://www.youtube.com/playlist?list=PLoBfjfgwNVNpgeRVhMZOA_H28RjXTGJAt"
+        style="display: block; text-decoration: none; color: dodgerblue; font-family: Verdana, Geneva, Tahoma, sans-serif; margin: 5px 0;"
+        >تجميعتي الخاصة لافضل محاضرات TEDx (رح ضل ضيف كل ما يعجبني فيديو)</a
+      >
+    </div>
+  </div>
+  <div
+    class="footer"
+    style="text-align: center; padding: 40px 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 300; color: #fff; font-size: 16px; background: #000; border-radius: 0 0 20px 20px;"
+  >
+    انشاء الله يفيدوكي واسف كثير على التاخير كان في عندي كثير لنكات بس والله
+    انحذف كثير منهن بس انشاء الله كل مايصير عندي مجموعة مفيدة رح ابعثلك اياها
+  </div>
+</div>
+lara_almadani@outlook.com -->
